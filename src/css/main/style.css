@@ -1,0 +1,57 @@
+#drawing-app {
+  display: flex;
+  gap: 0.2em;
+}
+#drawing-app #canvas-container {
+  overflow: hidden;
+  position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+#drawing-app #canvas-container canvas {
+  border: 1px solid black;
+}
+#drawing-app #canvas-container #mouse-icon {
+  position: absolute;
+  border: 1px solid black;
+  width: 10px;
+  height: 10px;
+  pointer-events: none;
+}
+#drawing-app #property-and-item-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+#drawing-app #property-and-item-container #items {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.4em;
+}
+#drawing-app #property-and-item-container #items i {
+  font-size: 1.5em;
+  border: 2px solid black;
+  padding: 0.6em;
+  cursor: pointer;
+}
+#drawing-app #property-and-item-container #properties {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+#drawing-app #property-and-item-container #properties input {
+  width: 100%;
+  padding: 0.5em;
+}
+
+.selected {
+  border: 2px solid red !important;
+}
+
+.diameter {
+  border-radius: 50%;
+}/*# sourceMappingURL=style.css.map */

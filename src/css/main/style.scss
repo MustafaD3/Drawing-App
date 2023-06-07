@@ -1,0 +1,52 @@
+#drawing-app{
+    display: flex;
+    gap: 0.2em;
+    #canvas-container{
+        overflow: hidden;
+        position: relative;
+        width: max-content;
+        height: max-content;
+        canvas{
+            border: 1px solid black;
+        }
+        #mouse-icon{
+            position: absolute;
+            border: 1px solid black;
+            width: 10px;
+            height: 10px;
+            pointer-events: none;
+        }
+    }
+    
+    #property-and-item-container{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        #items{
+            display: flex;
+            align-items: flex-start;
+            gap: 0.4em;
+            i{
+                font-size: 1.5em;
+                border: 2px solid black;
+                padding: 0.6em;
+                cursor: pointer;
+            }
+        }
+        #properties{
+            display: flex;
+            flex-direction: column;
+            gap: 0.5em;
+            input{
+                width: 100%;
+                padding: 0.5em;
+            }
+        }
+    }
+}
+.selected{
+    border:2px solid red !important;
+}
+.diameter{
+    border-radius: 50%;
+}
